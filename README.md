@@ -7,10 +7,8 @@ A local task state manager for your projects. Designed for humans and LLMs.
 ## Install
 
 ```bash
-pipx install git+https://github.com/BorisMolch/cli_todo.git
+pipx install td-cli
 ```
-
-`td` is not published on PyPI yet, so install from Git (or a local path) for now.
 
 ## Quick Start
 
@@ -88,8 +86,8 @@ updated: 2026-02-10T14:30:00
 ## Development
 
 ```bash
-git clone https://github.com/BorisMolch/cli_todo.git
-cd cli_todo
+git clone https://github.com/BorisMolch/td-cli.git
+cd td-cli
 python3 -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
 pytest
