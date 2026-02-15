@@ -21,3 +21,6 @@ td = "td.cli:cli"
 
 [tool.setuptools]
 packages = ["td"]
+
+[tool.setuptools.package-data]
+td = ["SKILL.md"]

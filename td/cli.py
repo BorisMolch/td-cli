@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 from datetime import datetime
+from importlib.resources import files
 
 import click
 
@@ -256,6 +257,13 @@ def rm(id: str, force: bool):
 
     delete_task(root, id)
     click.echo(f"Deleted {id}")
+
+
+@cli.command()
+def skill():
+    """Print the td-tasks LLM skill (SKILL.md)."""
+    content = files("td").joinpath("SKILL.md").read_text()
+    click.echo(content)
 
 
 @cli.command()
